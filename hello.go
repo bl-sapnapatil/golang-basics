@@ -37,5 +37,11 @@ func main() {
 	scanner.Scan()
 	input, err := strconv.ParseInt(scanner.Text(), 10, 64)
     fmt.Printf("value is: %d \n", input)
-    fmt.Printf("ERR is: %v ", err)
+    fmt.Printf("ERR is: %v \n", err)
+
+    /* Arithmetic Operators & Math*/
+    var num1 float64 = 8
+    var num2 int = 5
+    sum := num1 / float64(num2)
+    fmt.Printf("%f \n", sum)
 }
