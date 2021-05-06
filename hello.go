@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
 
 func main() {
 
@@ -22,9 +27,15 @@ func main() {
 	fmt.Printf("checkboolean:  %t \n", true)
 	fmt.Printf("Binary Representation: %b \n", 1025)
 	fmt.Printf("Octal Representation: %o \n", 1025)
-    fmt.Printf("Decimal Representation: %d \n", 1025)
-    fmt.Printf("String Representation: %s \n", "sapna")
-    fmt.Printf("Double String Representation: %q \n", "sapna")
+	fmt.Printf("Decimal Representation: %d \n", 1025)
+	fmt.Printf("String Representation: %s \n", "sapna")
+	fmt.Printf("Double String Representation: %q \n", "sapna")
 
-
+    /* Console Input(Bufio Scanner & Type Conversion)*/
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Printf("Type the year you were born: ")
+	scanner.Scan()
+	input, err := strconv.ParseInt(scanner.Text(), 10, 64)
+    fmt.Printf("value is: %d \n", input)
+    fmt.Printf("ERR is: %v ", err)
 }
