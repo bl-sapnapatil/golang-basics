@@ -55,4 +55,11 @@ func main() {
 	b := "Sap"
 	compare := a < b
 	fmt.Printf("%t \n", compare)
+
+	/*Chained Conditionals AND, OR, NOT */
+	value := (true || false) && !!false
+	value1 := value || false
+	fmt.Printf("%t \n", value1)
+
+
 }
