@@ -31,17 +31,28 @@ func main() {
 	fmt.Printf("String Representation: %s \n", "sapna")
 	fmt.Printf("Double String Representation: %q \n", "sapna")
 
-    /* Console Input(Bufio Scanner & Type Conversion)*/
+	/* Console Input(Bufio Scanner & Type Conversion)*/
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Printf("Type the year you were born: ")
 	scanner.Scan()
 	input, err := strconv.ParseInt(scanner.Text(), 10, 64)
-    fmt.Printf("value is: %d \n", input)
-    fmt.Printf("ERR is: %v \n", err)
+	fmt.Printf("value is: %d \n", input)
+	fmt.Printf("ERR is: %v \n", err)
 
-    /* Arithmetic Operators & Math*/
-    var num1 float64 = 8
-    var num2 int = 5
-    sum := num1 / float64(num2)
-    fmt.Printf("%f \n", sum)
+	/* Arithmetic Operators & Math*/
+	var num1 float64 = 8
+	var num2 int = 5
+	sum := num1 / float64(num2)
+	fmt.Printf("%f \n", sum)
+
+	/*Conditions & Boolean Expression */
+	x := 5
+	y := 6.5
+	val := float64(x)+1.5 != y
+	fmt.Printf("%t \n", val)
+
+	a := "sap"
+	b := "Sap"
+	compare := a < b
+	fmt.Printf("%t \n", compare)
 }
