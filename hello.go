@@ -85,4 +85,24 @@ func main() {
 		// break
 		continue
 	}
+
+	/*Switch statement*/
+	ans := 1
+	switch ans {
+	case 1:
+		fmt.Println("one")
+	case 2:
+		fmt.Println("two")
+	default:
+		fmt.Println("No case")	
+	}
+
+	switch {
+	case ans > 0:
+		fmt.Println("greater then 0")
+	case  ans < 0:
+		fmt.Println("less then 0")
+	default:
+		fmt.Println("0")
+	}
 }
