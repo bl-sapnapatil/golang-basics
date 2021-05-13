@@ -61,5 +61,15 @@ func main() {
 	value1 := value || false
 	fmt.Printf("%t \n", value1)
 
-
+	/**If, Else If, Else */
+	age := 19
+	fmt.Println("Before If")
+	if age >= 18 {
+		fmt.Println("Eligible")
+	} else if age >= 14 {
+		fmt.Println("Not Eligible")
+		fmt.Printf("wait %d years \n", 18-age)
+	} else {
+		fmt.Println("Not Eligible")
+	}
 }
