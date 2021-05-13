@@ -72,4 +72,17 @@ func main() {
 	} else {
 		fmt.Println("Not Eligible")
 	}
+
+	/*For Loop and While Loop*/
+	u := 4
+	for u < 7 {
+		fmt.Println(u)
+		u++
+	}
+
+	for a := 0; a <= 5; a++ {
+		// fmt.Println(a)
+		// break
+		continue
+	}
 }
