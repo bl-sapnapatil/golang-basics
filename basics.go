@@ -11,6 +11,7 @@ func main() {
 
 	array()
 	array2D()
+	arraySlice()
 
 	/*Data types - Explicit*/
 	var number uint8 = 255
@@ -116,17 +117,29 @@ func array() {
 	arr[0] = 100
 	fmt.Println("Array", arr)
 
-
 	newArr := [3]int{4, 5, 6}
 	sum := 0
 	for i := 0; i < len(newArr); i++ {
 		sum += newArr[i]
-	} 
+	}
 
-	fmt.Println("sum",sum)
+	fmt.Println("sum", sum)
 }
 
 func array2D() {
-	arr2D := [2][3]int{{1,2,3}, {3,3,4}}
-	fmt.Println("array2D",arr2D[1][2])
+	arr2D := [2][3]int{{1, 2, 3}, {3, 3, 4}}
+	fmt.Println("array2D", arr2D[1][2])
+}
+
+func arraySlice() {
+	var x [5]int = [5]int{1, 2, 3, 4, 5}
+	var s []int = x[1:3]
+	fmt.Println("slice", s)
+	fmt.Println("length", len(s))
+	fmt.Println("capacity", cap(s))
+
+	var a []int = []int{1, 2, 3, 4, 5}
+	b := append(a, 10)
+	fmt.Println("append", b)
+
 }
