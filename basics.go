@@ -7,7 +7,10 @@ import (
 	"strconv"
 )
 
+
 func main() {
+
+	hello()
 
 	/*Data types - Explicit*/
 	var number uint8 = 255
@@ -94,15 +97,21 @@ func main() {
 	case 2:
 		fmt.Println("two")
 	default:
-		fmt.Println("No case")	
+		fmt.Println("No case")
 	}
 
 	switch {
 	case ans > 0:
 		fmt.Println("greater then 0")
-	case  ans < 0:
+	case ans < 0:
 		fmt.Println("less then 0")
 	default:
 		fmt.Println("0")
 	}
+	hello()
+
+}
+
+func hello() {
+	fmt.Println("Hey!!!!!!!!!!!")
 }
