@@ -141,5 +141,6 @@ func arraySlice() {
 	var a []int = []int{1, 2, 3, 4, 5}
 	b := append(a, 10)
 	fmt.Println("append", b)
+	// check/
 
 }
